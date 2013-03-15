@@ -66,9 +66,9 @@ public class getHtmlSource{
                 try{
                     u2 = new URL(url2);
                 } catch (MalformedURLException e) {
-                    u2 = new URL(u.getProtocol(),u.getHost(),u.getFile()+url2);
+                    u2 = new URL(u.getProtocol(),u.getHost(),u.getFile()+"/"+url2);
                 } finally {
-                    rssUrl = u2.toString();
+                    atomUrl = u2.toString();
                 }
             }
         }catch (Exception e) {
